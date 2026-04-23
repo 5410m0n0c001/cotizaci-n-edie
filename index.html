@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Taquiza - Edimael Becerra</title>
+    <meta name="description" content="Propuesta de Servicio Especial: Taquiza para 250 personas con Pastor, Longaniza y Campechano. Incluye paquetes con agua fresca y complementos para Edimael Becerra.">
+    
+    <!-- Open Graph / Meta Tags para Enlaces (WhatsApp, Facebook, etc) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://5410m0n0c001.github.io/cotizaci-n-edie/">
+    <meta property="og:title" content="Cotización de Taquiza - Edimael Becerra | Primavera Events Group">
+    <meta property="og:description" content="Propuesta de Servicio Especial: Taquiza para 250 personas con Pastor, Longaniza y Campechano. Incluye paquetes con agua fresca y complementos.">
+    <meta property="og:image" content="https://5410m0n0c001.github.io/cotizaci-n-edie/Taquiza.jpg">
+
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://5410m0n0c001.github.io/cotizaci-n-edie/">
+    <meta property="twitter:title" content="Cotización de Taquiza - Edimael Becerra | Primavera Events Group">
+    <meta property="twitter:description" content="Propuesta de Servicio Especial: Taquiza para 250 personas con Pastor, Longaniza y Campechano. Incluye paquetes con agua fresca y complementos.">
+    <meta property="twitter:image" content="https://5410m0n0c001.github.io/cotizaci-n-edie/Taquiza.jpg">
+    
+    <!-- Google Fonts for Editorial Luxury -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Primavera Official Branding: Luxury + Soft Minimal + Wedding Editorial */
+            --primary-pink: #F65C7A;
+            --primary-light: #FF8FA3;
+            --primary-dark: #1F1F1F;
+            --background-light: #F8F6F4;
+            --white: #FFFFFF;
+            --soft-pink: #FADADD;
+            --beige: #EFE7E1;
+            --gold-accent: #C9A96E;
+            --gray-text: #6D6D6D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-light);
+            color: var(--primary-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, .serif-text {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 50vh;
+            min-height: 350px;
+            background-image: url('Taquiza.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: var(--white);
+            z-index: 1;
+            padding: 0 20px;
+            animation: fadeInDown 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--soft-pink);
+            margin-top: 10px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: -60px auto 60px;
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
+        /* Card Styles */
+        .quote-card {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 50px;
+            animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s both;
+        }
+
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--beige);
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-main h2 {
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            line-height: 1.2;
+        }
+
+        .header-main p {
+            font-size: 1.1rem;
+            color: var(--gray-text);
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        .badge-people {
+            display: inline-block;
+            background: var(--soft-pink);
+            color: var(--primary-pink);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .date-box {
+            text-align: right;
+            background: var(--background-light);
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 1px solid var(--beige);
+        }
+
+        .date-box span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--gray-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .date-box strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            font-family: 'Playfair Display', serif;
+            margin-top: 3px;
+        }
+
+        /* Includes Section */
+        .section-title {
+            color: var(--primary-dark);
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title i {
+            color: var(--primary-pink);
+            font-size: 1.2rem;
+        }
+
+        .includes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 45px;
+        }
+
+        .include-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px;
+            background: var(--white);
+            border: 1px solid var(--beige);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .include-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Soft shadows hover */
+            border-color: var(--soft-pink);
+        }
+
+        .include-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--soft-pink);
+            color: var(--primary-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            transition: background 0.3s ease;
+            box-shadow: inset 0 0 0 1px rgba(246, 92, 122, 0.1);
+        }
+
+        .include-item:hover .include-icon {
+            background: var(--primary-pink);
+            color: var(--white);
+        }
+
+        .include-text h4 {
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: var(--primary-dark);
+        }
+
+        .include-text p {
+            font-size: 0.9rem;
+            color: var(--gray-text);
+            line-height: 1.5;
+        }
+
+        /* Pricing Table */
+        .pricing-container {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--beige);
+            margin-bottom: 35px;
+            background: var(--white);
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .pricing-table thead {
+            background: var(--background-light);
+            border-bottom: 1px solid var(--beige);
+        }
+
+        .pricing-table th {
+            font-weight: 500;
+            color: var(--gray-text);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pricing-table td {
+            border-bottom: 1px solid var(--beige);
+        }
+
+        .pricing-table td.amount {
+            text-align: right;
+            font-weight: 500;
+            color: var(--primary-dark);
+        }
+
+        .pricing-table th.amount-head {
+            text-align: right;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .item-title {
+            font-weight: 500;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            color: var(--gray-text);
+        }
+
+        .total-row {
+            background: var(--background-light) !important;
+        }
+
+        .total-row td {
+            padding: 25px 20px;
+            border-top: 1px solid var(--beige);
+        }
+
+        .total-row td:first-child {
+            text-align: right;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            color: var(--primary-dark);
+        }
+
+        .total-row td.amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-pink);
+            border-bottom: none;
+        }
+
+        /* Locations Grid */
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .location-btn {
+            display: flex;
+            flex-direction: column;
+            background: var(--white);
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 32px; /* Apple-style extra rounded */
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            text-decoration: none;
+            color: var(--primary-dark);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .location-btn:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: var(--primary-pink);
+        }
+
+        .location-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover; /* Changed to cover for a fuller 'premium' look */
+            padding: 0; /* Remove padding to maximize the rounded clip effect */
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .location-btn:hover .location-img {
+            transform: scale(1.05);
+        }
+
+        .location-name {
+            padding: 15px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid var(--beige);
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 25px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #F65C7A, #FF8FA3);
+            color: white;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 20px rgba(246, 92, 122, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+            color: white;
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: var(--gray-text);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 0 20px 40px;
+            color: var(--gray-text);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Scroll Reveal Animations */
+        /* Base Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        /* Vertical Reveal (Default) */
+        .reveal-up {
+            transform: translateY(40px);
+        }
+
+        /* Lateral Reveal */
+        .reveal-left {
+            transform: translateX(-50px);
+        }
+
+        .reveal-right {
+            transform: translateX(50px);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero { height: 40vh; min-height: 280px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 0.9rem; letter-spacing: 3px; }
+            .container { margin-top: -40px; margin-bottom: 40px; }
+            .quote-card { padding: 25px 15px; border-radius: 12px; }
+            
+            .header-info { flex-direction: column; text-align: center; gap: 15px; }
+            .header-info > div { width: 100%; }
+            .header-main h2 { font-size: 1.8rem; }
+            .date-box { text-align: center; display: block; width: 100%; }
+            
+            .section-title { font-size: 1.4rem; justify-content: center; text-align: center; flex-wrap: wrap; }
+            .includes-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 30px; }
+            .include-item { padding: 15px; flex-direction: column; text-align: center; align-items: center; }
+            .include-icon { margin-bottom: 5px; }
+            
+            /* Responsive Table Trick */
+            .pricing-table thead { display: none; }
+            .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+            .pricing-table tr { margin-bottom: 15px; border: 1px solid var(--beige); border-radius: 8px; overflow: hidden; }
+            .pricing-table td { text-align: right; padding: 12px 15px; border-bottom: 1px solid var(--beige); position: relative; padding-left: 50%; min-height: 45px; }
+            .pricing-table td::before { content: attr(data-label); position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-weight: 500; text-align: left; color: var(--gray-text); font-size: 0.85rem; text-transform: uppercase;}
+            .pricing-table td:last-child { border-bottom: none; }
+            
+            .pricing-table td:first-child { text-align: left; padding: 15px; text-align: center; }
+            .pricing-table td:first-child::before { display: none; }
+            .item-desc { margin-top: 8px; display: block; }
+            
+            .total-row { border: none !important; margin-bottom: 0; background: var(--background-light) !important; border-top: none; }
+            .total-row td { padding: 20px 15px !important; text-align: center; border-top: none; }
+            .total-row td:first-child { display: none; }
+            .total-row td.amount { font-size: 2rem; padding-left: 15px; }
+            .total-row td.amount::before { content: "Total Inversión (MXN)"; position: static; display: block; text-align: center; transform: none; color: var(--gray-text); font-size: 0.9rem; margin-bottom: 8px; font-family: 'Poppins', sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;}
+            
+            .btn-primary { width: 100%; justify-content: center; font-size: 1.05rem; padding: 14px 20px; flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Propuesta de Servicio</h1>
+            <p>Primavera Events Group</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="quote-card">
+            <!-- Header Info -->
+            <div class="header-info reveal">
+                <div class="header-main">
+                    <h2>Propuesta de Taquiza Especial</h2>
+                    <p style="font-size: 1.05rem; margin-top: 10px; margin-bottom: 12px; color: var(--gray-text);">Estimado <strong>Edimael Becerra</strong>, reciba un cordial saludo. Permítanos presentarle la siguiente propuesta para su evento de 250 personas:</p>
+                    <span class="badge-people"><i class="fa-solid fa-fire-burner"></i> Taquiza Tradicional Mexicana</span>
+                </div>
+                <div class="date-box">
+                    <span>Inversión P/P</span>
+                    <strong>$125.00</strong>
+                </div>
+            </div>
+
+            <!-- Includes Section -->
+                <div class="include-item reveal delay-1">
+                    <div class="include-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="include-text">
+                        <h4>Taquiza Variada</h4>
+                        <p>Pastor, Longaniza y Campechano preparados al momento.</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-2">
+                    <div class="include-icon"><i class="fa-solid fa-bottle-water"></i></div>
+                    <div class="include-text">
+                        <h4>Agua Fresca</h4>
+                        <p>Deliciosa agua fresca de sabor para acompañar sus alimentos.</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-3">
+                    <div class="include-icon"><i class="fa-solid fa-pepper-hot"></i></div>
+                    <div class="include-text">
+                        <h4>Complementos</h4>
+                        <p>Pepinos, salsas caseras, cebolla y cilantro fresco.</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-4">
+                    <div class="include-icon"><i class="fa-solid fa-plate-wheat"></i></div>
+                    <div class="include-text">
+                        <h4>Plato Desechable</h4>
+                        <p>Servicio con loza desechable de alta calidad incluido en paquete.</p>
+                    </div>
+                </div>
+                <div class="include-item reveal delay-5">
+                    <div class="include-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="include-text">
+                        <h4>Capacidad</h4>
+                        <p>Servicio garantizado para 250 personas (250 px).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Section -->
+            <h3 class="section-title reveal"><i class="fa-solid fa-envelope-open-text"></i> Desglose de Inversión</h3>
+            
+            <div class="pricing-container reveal delay-2">
+                <div style="overflow-x: auto;">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Descripción del Servicio</th>
+                                <th class="amount-head" style="text-align: right;">Costo por Persona</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Servicio">
+                                    <span class="item-title">Paquete Todo Incluido</span>
+                                    <span class="item-desc">Taquiza de Pastor, Longaniza y Campechano para 250 px + Agua Fresca + Plato desechable, Pepinos, Salsas, Cebolla y Cilantro.</span>
+                                    <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; align-items: center;">
+                                        <img src="Taquiza.jpg" alt="Taquiza" class="reveal reveal-up" style="width: 120px; border-radius: 8px;">
+                                        <img src="aguas_frescas.webp" alt="Agua Fresca" class="reveal reveal-up delay-1" style="width: 120px; border-radius: 8px;">
+                                        <img src="incluyeplatodesechable.webp" alt="Plato Desechable" class="reveal reveal-up delay-2" style="width: 120px; border-radius: 8px;">
+                                        <img src="complementos.png" alt="Complementos" class="reveal reveal-up delay-3" style="width: 120px; border-radius: 8px;">
+                                    </div>
+                                </td>
+                                <td class="amount" data-label="Costo p/p">$125.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <!-- CTA Section -->
+            <div class="cta-section reveal">
+                <p class="cta-text">"Hacemos realidad el evento de tus sueños con la elegancia que mereces."</p>
+                <a href="https://primaveraeventsgroup.com/richard-hernandez/" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    Confirmar Cotización <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p class="disclaimer">Al confirmar, serás redirigido a nuestro sitio oficial para reservar tu fecha y afinar detalles.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Primavera Events Group. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para animaciones OnScroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -40px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Opcional: Descomentar linea abajo si quieres que se animen solo la primera vez que aparecen
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
+</body>
+</html>
